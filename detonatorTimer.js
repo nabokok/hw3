@@ -3,10 +3,10 @@ function detonatorTimer(delay) {
         if (delay === 0) {
             console.log('BOOM!');
             clearInterval(timerId);
-            return;
+        } else {
+            console.log(delay);
+            delay--;
         }
-        console.log(delay);
-        delay--;
     }, 1000);
 }
 
